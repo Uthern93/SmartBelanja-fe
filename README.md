@@ -1,70 +1,205 @@
-# Getting Started with Create React App
+# SmartBelanja - Monthly Budget Tracker
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+A comprehensive React web application for tracking and planning monthly spending with beautiful, mobile-responsive design.
 
-## Available Scripts
+## 🌟 Features
 
-In the project directory, you can run:
+### 1. Budget Allocation
 
-### `npm start`
+- **Pre-defined Categories**: Food, Utilities, Car, Personal, Entertainment
+- **Custom Categories**: Add your own budget categories with custom names and amounts
+- **Easy Management**: Set monthly budget amounts for each category
+- **Real-time Totals**: See your total monthly budget allocation
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+### 2. Expense Tracking
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- **Add Expenses**: Record expenses with amount, description, and category
+- **Receipt Upload**: Attach receipt images (JPEG, PNG, GIF) or PDF files
+- **Search & Filter**: Find expenses by description or filter by category
+- **Grouped View**: Expenses organized by date for easy review
+- **Real-time Statistics**: Track total expenses, number of transactions, and daily averages
 
-### `npm test`
+### 3. Dashboard Analytics
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+- **Visual Charts**: Pie charts for spending distribution and bar charts for budget vs actual
+- **Progress Tracking**: Visual progress bars showing budget utilization
+- **Summary Cards**: Quick overview of total allocated, spent, remaining, and percentage used
+- **Category Breakdown**: Detailed table showing performance for each category
+- **Recent Activity**: Quick view of recent expenses
 
-### `npm run build`
+### 4. Data Export
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+- **Excel Export**: Professional spreadsheet with multiple sheets (Budget Summary & Detailed Expenses)
+- **CSV Export**: Lightweight format compatible with Google Sheets and other tools
+- **Automatic Naming**: Files named with current month and year
+- **Comprehensive Data**: Includes allocated vs spent comparisons, percentages, and receipt status
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+### 5. Mobile-First Design
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- **Responsive Layout**: Optimized for mobile, tablet, and desktop
+- **Touch-Friendly**: Large buttons and easy navigation on mobile devices
+- **Tailwind CSS**: Modern, clean design with consistent styling
+- **Mobile Navigation**: Collapsible menu for small screens
 
-### `npm run eject`
+### 6. Data Persistence
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+- **Local Storage**: All data automatically saved to browser's local storage
+- **No Server Required**: Runs entirely in the browser
+- **Instant Loading**: Fast performance with local data storage
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+## 🚀 Getting Started
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+### Prerequisites
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+- Node.js (version 14 or higher)
+- npm or yarn
 
-## Learn More
+### Installation
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+1. **Clone the repository**
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+   ```bash
+   git clone <repository-url>
+   cd smartbelanja-fe
+   ```
 
-### Code Splitting
+2. **Install dependencies**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+   ```bash
+   npm install
+   ```
 
-### Analyzing the Bundle Size
+3. **Start the development server**
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
+   ```bash
+   npm start
+   ```
 
-### Making a Progressive Web App
+4. **Open your browser**
+   Navigate to [http://localhost:3000](http://localhost:3000)
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
+## 📱 Usage Guide
 
-### Advanced Configuration
+### Setting Up Your Budget
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
+1. Navigate to **Budget Allocation**
+2. Set amounts for default categories (Food, Utilities, Car, Personal, Entertainment)
+3. Add custom categories by clicking "Add Category"
+4. Click "Save Allocations" to store your budget
 
-### Deployment
+### Tracking Expenses
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
+1. Go to **Expense Tracking**
+2. Click "Add Expense"
+3. Select category, enter amount and description
+4. Optionally upload a receipt
+5. Click "Add Expense" to save
 
-### `npm run build` fails to minify
+### Viewing Your Dashboard
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+1. Visit the **Dashboard** to see:
+   - Monthly spending overview
+   - Visual charts and graphs
+   - Category-wise breakdown
+   - Recent expenses
+
+### Exporting Data
+
+1. Navigate to **Export Data**
+2. Choose between Excel (.xlsx) or CSV (.csv) format
+3. Click download to get your monthly report
+
+## 🛠️ Technology Stack
+
+- **React 19**: Modern React with hooks and context
+- **React Router**: Client-side routing
+- **Tailwind CSS**: Utility-first CSS framework
+- **Recharts**: Beautiful charts and graphs
+- **Lucide React**: Modern icon set
+- **React Hot Toast**: Elegant notifications
+- **XLSX**: Excel file generation
+- **File Saver**: File download functionality
+
+## 📁 Project Structure
+
+```
+src/
+├── components/          # Reusable UI components
+│   └── Navigation.js    # Main navigation component
+├── context/             # React context for state management
+│   └── BudgetContext.js # Budget and expense state management
+├── pages/               # Main application pages
+│   ├── Dashboard.js     # Analytics dashboard
+│   ├── BudgetAllocation.js # Budget setup page
+│   ├── ExpenseTracking.js  # Expense management page
+│   └── Export.js        # Data export page
+├── utils/               # Utility functions
+│   └── exportUtils.js   # Export and formatting utilities
+├── App.js               # Main app component with routing
+└── index.js             # Application entry point
+```
+
+## 🎨 Design Features
+
+- **Consistent Color Scheme**: Professional blue and gray palette
+- **Responsive Grid**: Adapts to all screen sizes
+- **Loading States**: Smooth user experience with loading indicators
+- **Error Handling**: User-friendly error messages
+- **Accessibility**: Screen reader friendly with proper ARIA labels
+
+## 💾 Data Storage
+
+All data is stored locally in your browser using localStorage. This means:
+
+- ✅ No account creation required
+- ✅ Data persists between sessions
+- ✅ Works offline
+- ⚠️ Data is device-specific
+- ⚠️ Clearing browser data will remove your information
+
+## 🔧 Customization
+
+The application is highly customizable:
+
+- Add unlimited custom budget categories
+- Modify the default categories in `BudgetContext.js`
+- Adjust the color scheme in `tailwind.config.js`
+- Customize export formats in `exportUtils.js`
+
+## 📊 Export Formats
+
+### Excel (.xlsx)
+
+- **Budget Summary Sheet**: Category allocations, spending, and percentages
+- **Detailed Expenses Sheet**: All expenses with dates, categories, and receipt status
+- **Professional Formatting**: Ready for presentations and analysis
+
+### CSV (.csv)
+
+- **Universal Compatibility**: Works with Google Sheets, Excel, and other tools
+- **Lightweight**: Smaller file size for quick sharing
+- **Text-based**: Easy to parse and manipulate
+
+## 🤝 Contributing
+
+1. Fork the repository
+2. Create a feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## 📄 License
+
+This project is open source and available under the [MIT License](LICENSE).
+
+## 📞 Support
+
+If you encounter any issues or have questions:
+
+1. Check the existing issues in the repository
+2. Create a new issue with detailed description
+3. Include screenshots if applicable
+
+---
+
+**Happy Budget Tracking! 💰**

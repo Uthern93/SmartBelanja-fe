@@ -1,24 +1,29 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import { BudgetProvider } from './context/BudgetContext';
+import Navigation from './components/Navigation';
+import Dashboard from './pages/Dashboard';
+import BudgetAllocation from './pages/BudgetAllocation';
+import ExpenseTracking from './pages/ExpenseTracking';
+import Export from './pages/Export';
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <BudgetProvider>
+      <Router>
+        <div className="min-h-screen bg-gray-50">
+          <Navigation />
+          <main>
+            <Routes>
+              <Route path="/" element={<Dashboard />} />
+              <Route path="/budget" element={<BudgetAllocation />} />
+              <Route path="/expenses" element={<ExpenseTracking />} />
+              <Route path="/export" element={<Export />} />
+            </Routes>
+          </main>
+        </div>
+      </Router>
+    </BudgetProvider>
   );
 }
 
